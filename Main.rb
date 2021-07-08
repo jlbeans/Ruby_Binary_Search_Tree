@@ -18,6 +18,8 @@ bst.insert(121)
 bst.insert(171)
 bst.insert(127)
 bst.insert(159)
+bst.insert(111)
+bst.insert(105)
 
 p "Balanced?: #{bst.balanced?}"
 p 'Rebalancing...'
