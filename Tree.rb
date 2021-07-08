@@ -118,11 +118,11 @@ class Tree
   def balanced?(node = @root)
     return true if node.nil?
 
-    while height(node.left) - height(node.right).abs <= 1
-      return true if balanced?(node.left) && balanced?(node.right)
+    return true if balanced?(node.left) &&
+                   balanced?(node.right) &&
+                   (height(node.left) - height(node.right)).abs <= 1
 
-      false
-    end
+    false
   end
 
   def rebalance

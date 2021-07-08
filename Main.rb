@@ -21,6 +21,7 @@ bst.insert(159)
 bst.insert(111)
 bst.insert(105)
 
+bst.pretty_print
 p "Balanced?: #{bst.balanced?}"
 p 'Rebalancing...'
 bst.rebalance
